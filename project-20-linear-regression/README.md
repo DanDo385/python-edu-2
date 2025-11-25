@@ -90,20 +90,18 @@ Epoch 100: Loss = 0.3, w=2.0, b=1.0 (converged!)
 
 ### 1. NumPy Vectorization
 
-Python/NumPy makes vectorized operations natural:
+NumPy makes vectorized operations natural:
 
 ```python
-# Python - vectorized and clean
+# Vectorized operations work on entire arrays at once
 y_pred = w * x + b  # Works on entire array at once
 loss = np.mean((y_pred - y_true)**2)  # Vectorized MSE
-
-# vs. Other languages - need explicit loops
 ```
 
 ### 2. Clean Training Loop
 
 ```python
-# Python - readable training loop
+# Readable training loop
 for epoch in range(epochs):
     y_pred = w * x + b
     loss = compute_loss(y_pred, y_true)
@@ -111,20 +109,6 @@ for epoch in range(epochs):
     w -= learning_rate * grad_w
     b -= learning_rate * grad_b
 ```
-
-## Comparison with Other Languages
-
-### Go
-- **More verbose**: Need explicit loops for vectorization
-- **Type safety**: Explicit types required throughout
-
-### TypeScript
-- **Limited**: Not designed for numerical computing
-- **Web-focused**: Better for other applications
-
-### Rust
-- **Performance**: Excellent but more complex
-- **Ecosystem**: Less mature for ML
 
 ## Deliverables
 
@@ -147,5 +131,6 @@ After completing this project, you'll understand:
 - How to implement algorithms from scratch
 
 This is a major milestone - you've built your first ML model! This foundation applies to all neural networks.
+
 
 

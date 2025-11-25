@@ -100,7 +100,7 @@ transposed = tensor.T
 ### 1. Seamless GPU Integration
 
 ```python
-# Python - easy GPU usage
+# Easy GPU usage
 tensor = torch.randn(1000, 1000)
 tensor_gpu = tensor.cuda()  # Move to GPU
 result = tensor_gpu @ tensor_gpu  # Fast GPU computation
@@ -117,20 +117,6 @@ tensor = torch.from_numpy(numpy_array)  # NumPy → PyTorch
 ### 3. Intuitive API
 
 PyTorch API is similar to NumPy, making transition easy.
-
-## Comparison with Other Languages
-
-### Go
-- **No PyTorch equivalent**: Would need to use C libraries
-- **GPU programming**: Much more complex
-
-### TypeScript
-- **Limited ML support**: Not designed for deep learning
-- **No GPU acceleration**: Limited to CPU
-
-### Rust
-- **Performance**: Fast but less mature ML ecosystem
-- **GPU**: More complex than PyTorch
 
 ## Deliverables
 

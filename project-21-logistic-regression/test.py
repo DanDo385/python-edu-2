@@ -50,3 +50,4 @@ def test_train_logistic_regression():
     assert history[-1] < history[0]  # Loss should decrease
 
 
+

@@ -140,3 +140,4 @@ def evaluate_model(x, y, w, b):
     return {'mse': mse, 'r2': r2, 'predictions': y_pred}
 
 
+

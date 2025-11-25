@@ -78,43 +78,21 @@ Matrix multiplication is the foundation of neural networks:
 
 ### 1. Automatic Broadcasting
 
-Python/NumPy automatically handles broadcasting:
+NumPy automatically handles broadcasting:
 
 ```python
-# Python - automatic broadcasting
+# Automatic broadcasting
 matrix = np.array([[1, 2], [3, 4]])  # Shape (2, 2)
 vector = np.array([10, 20])          # Shape (2,)
 result = matrix + vector              # Automatically broadcasts!
-
-# vs. Other languages - need explicit operations
-# Go, Rust, etc. require manual loops or special functions
 ```
 
 ### 2. Intuitive Matrix Operations
 
 ```python
-# Python - clean syntax
+# Clean syntax for matrix multiplication
 result = A @ B  # Matrix multiplication
-
-# vs. Other languages - more verbose
-# Often need explicit function calls or loops
 ```
-
-## Comparison with Other Languages
-
-### Go
-- **No built-in broadcasting**: Must implement manually
-- **Explicit types**: More verbose but type-safe
-- **Performance**: Fast but requires more code
-
-### TypeScript
-- **Limited numerical computing**: Not designed for this
-- **No broadcasting**: Would need to implement manually
-
-### Rust
-- **Performance**: Can match NumPy
-- **Complexity**: Broadcasting requires explicit implementation
-- **Ecosystem**: Less mature for scientific computing
 
 ## Deliverables
 

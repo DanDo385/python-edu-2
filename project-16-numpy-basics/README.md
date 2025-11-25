@@ -96,19 +96,10 @@ Vectorization means applying operations to entire arrays simultaneously, rather 
 NumPy arrays integrate naturally with Python:
 
 ```python
-# Python - easy conversion
+# Easy conversion from Python lists
 import numpy as np
 python_list = [1, 2, 3]
 numpy_array = np.array(python_list)  # Convert easily
-
-# vs. Go - more verbose
-// Need explicit type conversions and manual memory management
-
-# vs. TypeScript - similar but less mature ecosystem
-const arr = new Float64Array([1, 2, 3]);
-
-# vs. Rust - powerful but more complex
-let arr = Array1::from_vec(vec![1.0, 2.0, 3.0]);
 ```
 
 ### 2. Broadcasting
@@ -116,11 +107,9 @@ let arr = Array1::from_vec(vec![1.0, 2.0, 3.0]);
 NumPy automatically handles operations between arrays of different shapes:
 
 ```python
-# Python - automatic broadcasting
+# Automatic broadcasting
 arr = np.array([[1, 2], [3, 4]])
 arr + 10  # Adds 10 to every element automatically
-
-# Other languages require explicit loops or special functions
 ```
 
 ### 3. Expressive Syntax
@@ -128,28 +117,9 @@ arr + 10  # Adds 10 to every element automatically
 NumPy operations read like mathematical notation:
 
 ```python
-# Python - reads like math
+# Reads like math
 result = (arr - mean) / std  # Normalization formula
-
-# vs. explicit loops in other languages
 ```
-
-## Comparison with Other Languages
-
-### Go
-- **No built-in NumPy equivalent**: Must use libraries or implement manually
-- **Explicit types**: More verbose but type-safe
-- **Performance**: Fast but requires more code
-
-### TypeScript
-- **Limited numerical computing**: Not designed for scientific computing
-- **Web-focused**: Better for browser/Node.js applications
-- **Type safety**: Optional types help catch errors
-
-### Rust
-- **Performance**: Can match or exceed NumPy performance
-- **Complexity**: Steeper learning curve, more verbose
-- **Ecosystem**: Less mature scientific computing libraries
 
 ## Deliverables
 

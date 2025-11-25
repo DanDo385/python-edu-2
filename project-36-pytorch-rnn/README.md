@@ -105,18 +105,6 @@ class RNNClassifier(nn.Module):
 - `nn.LSTM`: Long Short-Term Memory
 - `nn.GRU`: Gated Recurrent Unit
 
-## Comparison with Other Languages
-
-### Go
-- **No RNN libraries**: Would need to implement manually
-- **Much more complex**: Requires low-level implementation
-
-### TypeScript
-- **Limited ML support**: No mature RNN frameworks
-
-### Rust
-- **Less mature**: Fewer RNN implementations
-
 ## Deliverables
 
 Complete implementation:

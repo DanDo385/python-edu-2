@@ -97,7 +97,7 @@ Where:
 ### 1. NumPy for Efficient Regularization
 
 ```python
-# Python - vectorized regularization
+# Vectorized regularization
 l2_penalty = lambda_reg * np.sum(weights**2)
 loss += l2_penalty
 
@@ -108,7 +108,7 @@ gradient += 2 * lambda_reg * weights
 ### 2. Easy Visualization
 
 ```python
-# Python - matplotlib for plotting loss curves
+# Matplotlib for plotting loss curves
 import matplotlib.pyplot as plt
 plt.plot(train_losses, label='Train')
 plt.plot(val_losses, label='Validation')
@@ -118,20 +118,6 @@ plt.legend()
 ### 3. Clean Implementation
 
 Python's simplicity makes regularization concepts clear and easy to implement.
-
-## Comparison with Other Languages
-
-### Go
-- **No ML libraries**: Would need to implement everything manually
-- **More verbose**: Less suitable for rapid ML experimentation
-
-### TypeScript
-- **Limited ML support**: Not designed for scientific computing
-- **No NumPy equivalent**: Would need to implement array operations
-
-### Rust
-- **Performance**: Fast but more complex
-- **Less mature ML ecosystem**: Fewer examples and tutorials
 
 ## Deliverables
 

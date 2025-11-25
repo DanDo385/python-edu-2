@@ -84,37 +84,19 @@ Converges to x ≈ 3
 Python can compute gradients numerically:
 
 ```python
-# Python - compute gradient numerically
+# Compute gradient numerically
 def gradient(f, x, h=1e-5):
     return (f(x+h) - f(x-h)) / (2*h)
-
-# vs. Other languages - similar but less flexible
 ```
 
 ### 2. Clean Implementation
 
 ```python
-# Python - readable gradient descent
+# Readable gradient descent
 for epoch in range(epochs):
     grad = compute_gradient(f, x)
     x = x - learning_rate * grad
-
-# Clear and intuitive
 ```
-
-## Comparison with Other Languages
-
-### Go
-- **Similar implementation**: But more verbose
-- **Type safety**: Explicit types required
-
-### TypeScript
-- **Limited**: Not designed for numerical optimization
-- **Web-focused**: Better for other applications
-
-### Rust
-- **Performance**: Excellent but more complex
-- **Ecosystem**: Less mature for ML
 
 ## Deliverables
 
@@ -137,5 +119,6 @@ After completing this project, you'll understand:
 - How learning rate affects training
 
 This directly applies to training neural networks - gradient descent is how they learn!
+
 
 

@@ -114,7 +114,7 @@ learning_rate = initial_lr * (decay_rate ** epoch)
 ### 1. Easy Experimentation
 
 ```python
-# Python - iterate over hyperparameter combinations
+# Iterate over hyperparameter combinations
 for lr in [0.01, 0.001, 0.0001]:
     for batch_size in [32, 64, 128]:
         train_model(lr, batch_size)
@@ -123,7 +123,7 @@ for lr in [0.01, 0.001, 0.0001]:
 ### 2. Rich Libraries
 
 ```python
-# Python has tools like itertools for combinations
+# Tools like itertools for combinations
 from itertools import product
 for lr, bs in product(learning_rates, batch_sizes):
     train_model(lr, bs)
@@ -132,26 +132,13 @@ for lr, bs in product(learning_rates, batch_sizes):
 ### 3. Easy Tracking
 
 ```python
-# Python dictionaries for tracking results
+# Dictionaries for tracking results
 results = {
     'learning_rate': [],
     'batch_size': [],
     'validation_loss': []
 }
 ```
-
-## Comparison with Other Languages
-
-### Go
-- **More verbose**: Experimentation loops require more code
-- **Less ML tooling**: Fewer libraries for hyperparameter tuning
-
-### TypeScript
-- **Limited ML support**: Not designed for scientific computing
-
-### Rust
-- **Performance**: Fast but experimentation is more complex
-- **Less mature**: Fewer ML experimentation tools
 
 ## Deliverables
 

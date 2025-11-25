@@ -49,10 +49,6 @@ Input → Hidden Layer (ReLU) → Output Layer (Sigmoid) → Prediction
 
 NumPy makes the implementation clean and vectorized. The entire network can be implemented in pure NumPy, demonstrating all concepts clearly.
 
-## Comparison with Other Languages
-
-Similar advantages - Python's clarity helps understand the complete system.
-
 ## Deliverables
 
 Complete neural network implementation:

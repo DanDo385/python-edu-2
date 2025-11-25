@@ -12,13 +12,15 @@
 
 Deploying LLMs to production requires handling latency, throughput, and reliability. APIs, batching, and monitoring are essential.
 
-## Key Concepts
+**Computational Resources:**
+- **GPU**: Production LLM deployment is GPU-intensive. Serving systems use GPU clusters to handle concurrent requests. Batching multiple requests together improves GPU utilization.
+- **Memory**: Production systems need GPU memory for model weights and KV caches for multiple concurrent requests. Efficient memory management is critical for throughput.
+- **CPU**: Handles API requests, load balancing, and orchestration. The actual model inference is GPU-bound, but CPU manages the serving infrastructure.
 
-- Model serving APIs
-- Request batching
-- Concurrency handling
-- Monitoring and logging
-- Production considerations
+**ChatGPT Impact:**
+- ChatGPT's deployment at scale demonstrated how to serve large language models in production, handling millions of users with acceptable latency.
+- ChatGPT's success created demand for LLM serving infrastructure and APIs, making deployment techniques and best practices mainstream.
+- The ChatGPT API model showed how to expose LLMs as services, influencing how other LLMs are deployed and accessed.
 
 ## Deliverables
 

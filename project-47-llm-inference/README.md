@@ -12,12 +12,14 @@
 
 LLM inference requires optimization for speed and memory. KV caching, quantization, and batching improve performance.
 
-## Key Concepts
+**Computational Resources:**
+- **GPU**: LLM inference is heavily GPU-dependent. KV caching stores computed key-value pairs in GPU memory, significantly speeding up autoregressive generation. Modern inference systems (like those powering ChatGPT) rely on GPU clusters.
+- **Memory (VRAM)**: KV caching requires storing keys/values for all previous tokens, growing linearly with sequence length. Quantization (e.g., 8-bit or 4-bit) reduces memory requirements, enabling larger models on single GPUs.
+- **CPU**: Used for request handling, tokenization, and coordination, but actual model inference is GPU-bound.
 
-- KV caching (reuse computed keys/values)
-- Quantization (reduce precision)
-- Batch processing
-- Inference optimization
+**ChatGPT Impact:**
+- ChatGPT's real-time conversational interface required efficient inference optimizations. The techniques developed for ChatGPT (KV caching, quantization, efficient attention) became standard for LLM deployment.
+- ChatGPT demonstrated that optimized inference could make large models practical for interactive applications.
 
 ## Deliverables
 

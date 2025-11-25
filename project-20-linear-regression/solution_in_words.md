@@ -105,3 +105,4 @@ Linear regression is essentially a 1-layer neural network:
 Understanding this deeply prepares you for neural networks!
 
 
+

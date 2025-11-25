@@ -79,35 +79,17 @@ y2 = x1*w12 + x2*w22 + x3*w32
 Python provides `numpy.linalg` with optimized linear algebra operations:
 
 ```python
-# Python - clean and efficient
+# Clean and efficient linear algebra operations
 result = np.linalg.solve(A, b)  # Solve Ax = b
 eigenvals = np.linalg.eig(A)    # Eigenvalues
-
-# vs. Other languages - more verbose or less optimized
 ```
 
 ### 2. Intuitive Matrix Operations
 
 ```python
-# Python - reads like math
+# Reads like mathematical notation
 y = X @ w + b  # Matrix multiplication + bias
-
-# Clear and concise, matches mathematical notation
 ```
-
-## Comparison with Other Languages
-
-### Go
-- **No built-in linear algebra**: Must use external libraries
-- **More verbose**: Explicit type handling required
-
-### TypeScript
-- **Limited support**: Not designed for scientific computing
-- **Web-focused**: Better for frontend applications
-
-### Rust
-- **Performance**: Excellent but requires more code
-- **Ecosystem**: Less mature for linear algebra
 
 ## Deliverables
 
@@ -130,5 +112,6 @@ After completing this project, you'll understand:
 - How to reason about shapes and dimensions
 
 This knowledge directly applies to implementing neural networks from scratch.
+
 
 

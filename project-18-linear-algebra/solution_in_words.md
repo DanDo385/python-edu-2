@@ -74,3 +74,4 @@ Every neural network operation is linear algebra:
 Understanding linear algebra = understanding how neural networks work!
 
 
+

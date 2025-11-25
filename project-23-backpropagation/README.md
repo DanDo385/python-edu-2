@@ -52,10 +52,6 @@ Input layer: dLoss/dw_input = ... (chains further back)
 
 Python's clear syntax makes the chain rule implementation readable. NumPy handles the computations efficiently.
 
-## Comparison with Other Languages
-
-Similar advantages - Python's clarity helps understand the algorithm.
-
 ## Deliverables
 
 Complete backpropagation implementation:
@@ -68,5 +64,6 @@ Complete backpropagation implementation:
 ## Testing
 
 Run: `pytest test.py -v`
+
 
 

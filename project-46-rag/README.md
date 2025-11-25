@@ -12,12 +12,14 @@
 
 RAG combines retrieval (finding relevant documents) with generation (LLM producing answers) to improve accuracy and reduce hallucinations.
 
-## Key Concepts
+**Computational Resources:**
+- **GPU**: The LLM generation component requires GPU acceleration. Embedding models for document retrieval also benefit from GPU, though smaller embedding models can run on CPU.
+- **Memory**: RAG systems need memory for storing document embeddings (vector database) and for running the LLM. GPU memory is required for LLM inference.
+- **CPU**: Document processing, retrieval search, and vector database operations can run efficiently on CPU, though GPU acceleration helps for large-scale systems.
 
-- Document embedding and retrieval
-- Context injection into prompts
-- RAG pipeline
-- Improving LLM responses with external knowledge
+**ChatGPT Impact:**
+- ChatGPT's limitations (knowledge cutoff, potential hallucinations) drove interest in RAG as a way to ground responses in external knowledge.
+- RAG became a popular pattern for building ChatGPT-like systems with domain-specific knowledge, combining retrieval with generation.
 
 ## Deliverables
 

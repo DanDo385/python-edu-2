@@ -99,7 +99,7 @@ total_params = sum(p.numel() for p in model.parameters())
 ### 1. Clean Class Structure
 
 ```python
-# Python - clean module definition
+# Clean module definition
 class MyModel(nn.Module):
     def __init__(self):
         super().__init__()
@@ -116,18 +116,6 @@ class MyModel(nn.Module):
 model = MyModel()
 optimizer = torch.optim.SGD(model.parameters(), lr=0.01)
 ```
-
-## Comparison with Other Languages
-
-### Go
-- **No nn.Module equivalent**: Would need to build from scratch
-- **More verbose**: Much more code required
-
-### TypeScript
-- **Limited ML support**: No mature PyTorch equivalent
-
-### Rust
-- **Less mature**: Fewer ML frameworks
 
 ## Deliverables
 

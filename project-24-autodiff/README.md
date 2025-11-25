@@ -48,12 +48,6 @@ Graph: Tracks dependencies between tensors
 
 Python's object-oriented nature and operator overloading make autodiff natural. We can override `__add__`, `__mul__` to build the graph automatically.
 
-## Comparison with Other Languages
-
-- **Go**: Would need more explicit graph building
-- **TypeScript**: Similar but less mature
-- **Rust**: Powerful but ownership complicates graph structure
-
 ## Deliverables
 
 Complete autodiff engine:
@@ -65,5 +59,6 @@ Complete autodiff engine:
 ## Testing
 
 Run: `pytest test.py -v`
+
 
 

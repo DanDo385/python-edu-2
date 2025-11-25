@@ -105,7 +105,7 @@ for epoch in range(epochs):
 ### 1. Clean Training Loop
 
 ```python
-# Python - clean and readable
+# Clean and readable training loop
 for epoch in range(epochs):
     for batch_x, batch_y in dataloader:
         optimizer.zero_grad()
@@ -119,18 +119,6 @@ for epoch in range(epochs):
 - DataLoader: Automatic batching
 - Optimizers: Pre-implemented algorithms
 - Loss functions: Ready to use
-
-## Comparison with Other Languages
-
-### Go
-- **No PyTorch equivalent**: Would need to build everything
-- **Much more complex**: Manual implementation required
-
-### TypeScript
-- **Limited ML support**: No mature training frameworks
-
-### Rust
-- **Less mature**: Fewer ML training utilities
 
 ## Deliverables
 

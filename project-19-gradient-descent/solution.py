@@ -248,3 +248,4 @@ def check_convergence(gradient, tolerance=1e-6):
     # - Maximum iterations reached
 
 
+

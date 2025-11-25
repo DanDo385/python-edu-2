@@ -59,10 +59,6 @@ The decision boundary is where p = 0.5, i.e., w*x + b = 0
 
 Python/NumPy makes probability computations natural with vectorized operations and built-in functions like `np.exp()` for sigmoid.
 
-## Comparison with Other Languages
-
-Similar advantages as previous projects - Python's numerical computing ecosystem excels here.
-
 ## Deliverables
 
 Complete logistic regression implementation:
@@ -75,5 +71,6 @@ Complete logistic regression implementation:
 ## Testing
 
 Run: `pytest test.py -v`
+
 
 

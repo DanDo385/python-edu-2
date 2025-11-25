@@ -90,7 +90,7 @@ weights = weights - velocity
 ### 1. Easy Batch Creation
 
 ```python
-# Python - simple batch creation
+# Simple batch creation
 for i in range(0, len(X), batch_size):
     batch_X = X[i:i+batch_size]
     batch_y = y[i:i+batch_size]
@@ -103,18 +103,6 @@ for i in range(0, len(X), batch_size):
 # Efficient batch processing with NumPy
 batches = [X[i:i+batch_size] for i in range(0, len(X), batch_size)]
 ```
-
-## Comparison with Other Languages
-
-### Go
-- **More verbose**: Batch creation requires more code
-- **Less ML tooling**: Fewer libraries for batch processing
-
-### TypeScript
-- **Limited ML support**: Not designed for scientific computing
-
-### Rust
-- **Performance**: Fast but batch processing more complex
 
 ## Deliverables
 

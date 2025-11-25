@@ -40,3 +40,4 @@ With activation: Line → Curve → Line → Curve = Complex shape!
 4. **Think about use case**: When would you use this?
 
 
+

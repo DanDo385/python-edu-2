@@ -99,7 +99,7 @@ with torch.no_grad():
 ### 1. Seamless Integration
 
 ```python
-# Python - automatic differentiation
+# Automatic differentiation
 x = torch.tensor(2.0, requires_grad=True)
 y = x ** 3 + 2 * x
 y.backward()
@@ -109,23 +109,11 @@ print(x.grad)  # 3*x^2 + 2 = 14 at x=2
 ### 2. Context Managers
 
 ```python
-# Python - easy to disable gradients
+# Easy to disable gradients
 with torch.no_grad():
     # No gradient tracking
     result = model(x)
 ```
-
-## Comparison with Other Languages
-
-### Go
-- **No autograd**: Would need to implement manually
-- **Much more complex**: Requires building computation graphs
-
-### TypeScript
-- **Limited ML support**: No mature autograd libraries
-
-### Rust
-- **Less mature**: Fewer autograd implementations
 
 ## Deliverables
 

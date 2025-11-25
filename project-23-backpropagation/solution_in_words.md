@@ -40,3 +40,4 @@ Backward: Loss → Output → Layer2 → Layer1 → Input
 5. **Update weights**: Use gradients to improve
 
 
+

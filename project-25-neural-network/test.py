@@ -37,3 +37,4 @@ def test_xor_problem():
     assert accuracy >= 0.75  # Should learn XOR pattern
 
 
+

@@ -99,17 +99,6 @@ for param in model.layer1.parameters():
     param.requires_grad = False
 ```
 
-## Comparison with Other Languages
-
-### Go
-- **No pretrained models**: Would need to train from scratch
-- **Much slower**: No transfer learning support
-
-### TypeScript
-- **Limited ML support**: No mature transfer learning
-
-### Rust
-- **Less mature**: Fewer pretrained models available
 
 ## Deliverables
 

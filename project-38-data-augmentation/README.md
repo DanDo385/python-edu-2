@@ -93,17 +93,6 @@ transform = transforms.Compose([
 train_transform = transforms.Compose([...])
 ```
 
-## Comparison with Other Languages
-
-### Go
-- **No augmentation libraries**: Would need to implement manually
-- **Much more complex**: Requires image processing code
-
-### TypeScript
-- **Limited ML support**: No mature augmentation libraries
-
-### Rust
-- **Less mature**: Fewer augmentation implementations
 
 ## Deliverables
 

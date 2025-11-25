@@ -12,12 +12,15 @@
 
 Language modeling predicts the next token in a sequence. GPT models use decoder-only transformers with causal masking.
 
-## Key Concepts
+**Computational Resources:**
+- **GPU**: Language models are extremely GPU-intensive. Training GPT-scale models requires multiple GPUs or specialized hardware. Inference also benefits significantly from GPU acceleration.
+- **Memory**: Large language models require substantial GPU memory. GPT-3 (175B parameters) requires hundreds of GB of VRAM. Even smaller models (1-7B parameters) need 16-40GB VRAM for training.
+- **CPU**: Used for tokenization, data loading, and text processing, but model forward/backward passes are GPU-bound.
 
-- Causal masking (prevent seeing future tokens)
-- Autoregressive generation
-- Next token prediction
-- Text generation
+**ChatGPT Impact:**
+- ChatGPT demonstrated that decoder-only transformers (GPT architecture) could excel at conversational AI through careful training and alignment techniques.
+- It showed the importance of instruction tuning and reinforcement learning from human feedback (RLHF) for creating useful, safe language models.
+- ChatGPT's success validated the scaling hypothesis - larger models trained on more data produce better results.
 
 ## Deliverables
 

@@ -89,7 +89,7 @@ Linear(128, 10) → Output
 ### 1. Clean CNN Definition
 
 ```python
-# Python - intuitive CNN definition
+# Intuitive CNN definition
 class CNN(nn.Module):
     def __init__(self):
         super().__init__()
@@ -103,18 +103,6 @@ class CNN(nn.Module):
 - `nn.Conv2d`: Convolutional layers
 - `nn.MaxPool2d`: Pooling layers
 - `nn.BatchNorm2d`: Batch normalization
-
-## Comparison with Other Languages
-
-### Go
-- **No CNN libraries**: Would need to implement manually
-- **Much more complex**: Requires low-level implementation
-
-### TypeScript
-- **Limited ML support**: No mature CNN frameworks
-
-### Rust
-- **Less mature**: Fewer CNN implementations
 
 ## Deliverables
 

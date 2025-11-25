@@ -55,10 +55,6 @@ Result: Non-linear transformation! Can learn complex patterns.
 
 NumPy provides efficient implementations of these functions, and they're easy to visualize with matplotlib.
 
-## Comparison with Other Languages
-
-Similar advantages - Python's scientific computing ecosystem excels here.
-
 ## Deliverables
 
 Complete activation function implementations:
@@ -71,5 +67,6 @@ Complete activation function implementations:
 ## Testing
 
 Run: `pytest test.py -v`
+
 
 

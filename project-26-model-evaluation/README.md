@@ -98,23 +98,19 @@ The gap between training and test performance reveals overfitting.
 ### 1. NumPy for Efficient Splitting
 
 ```python
-# Python - clean array operations
+# Clean array operations
 indices = np.arange(len(data))
 np.random.shuffle(indices)
 train_idx = indices[:train_size]
 test_idx = indices[train_size:]
-
-# vs. Other languages - more verbose indexing
 ```
 
 ### 2. Vectorized Metric Computation
 
 ```python
-# Python - vectorized operations
+# Vectorized operations
 accuracy = np.mean(y_true == y_pred)  # Fast comparison
 mse = np.mean((y_true - y_pred) ** 2)  # Vectorized squaring
-
-# vs. Explicit loops in other languages
 ```
 
 ### 3. Rich Ecosystem
@@ -125,22 +121,6 @@ from sklearn.model_selection import train_test_split  # Reference implementation
 
 # But understanding the fundamentals is crucial!
 ```
-
-## Comparison with Other Languages
-
-### Go
-- **No built-in ML libraries**: Would need to implement everything manually
-- **Type safety**: More verbose but catches errors early
-- **Performance**: Fast but requires more code
-
-### TypeScript
-- **Limited ML support**: Not designed for scientific computing
-- **Web-focused**: Better for frontend applications
-
-### Rust
-- **Performance**: Can match NumPy performance
-- **Complexity**: Steeper learning curve
-- **Ecosystem**: Less mature for ML evaluation tools
 
 ## Deliverables
 

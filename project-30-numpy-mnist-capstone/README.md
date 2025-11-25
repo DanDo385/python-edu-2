@@ -106,7 +106,7 @@ Input (784) → Hidden Layer (128, ReLU) → Output (10, Softmax) → Prediction
 ### 1. NumPy for Efficient Computation
 
 ```python
-# Python - vectorized operations
+# Vectorized operations
 predictions = softmax(X @ W + b)  # Entire batch at once
 loss = -np.mean(np.log(predictions[range(batch_size), y_true]))  # Vectorized loss
 ```
@@ -114,7 +114,7 @@ loss = -np.mean(np.log(predictions[range(batch_size), y_true]))  # Vectorized lo
 ### 2. Easy Data Handling
 
 ```python
-# Python - simple data loading and preprocessing
+# Simple data loading and preprocessing
 images = images / 255.0  # Normalize
 images = images.reshape(-1, 784)  # Flatten
 ```
@@ -122,24 +122,10 @@ images = images.reshape(-1, 784)  # Flatten
 ### 3. Visualization
 
 ```python
-# Python - matplotlib for visualizing results
+# Matplotlib for visualizing results
 plt.imshow(image.reshape(28, 28), cmap='gray')
 plt.title(f'Predicted: {predicted_class}')
 ```
-
-## Comparison with Other Languages
-
-### Go
-- **No NumPy equivalent**: Would need to implement array operations manually
-- **More verbose**: Much more code for same functionality
-
-### TypeScript
-- **Limited ML support**: Not designed for scientific computing
-- **No mature ML libraries**: Would need to build everything
-
-### Rust
-- **Performance**: Fast but more complex
-- **Less mature ML ecosystem**: Fewer examples
 
 ## Deliverables
 
