@@ -124,3 +124,4 @@ def check_convergence(gradient, tolerance=1e-6):
 
 
 
+

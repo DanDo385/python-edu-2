@@ -75,3 +75,4 @@ Understanding linear algebra = understanding how neural networks work!
 
 
 
+

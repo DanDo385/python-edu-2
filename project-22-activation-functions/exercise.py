@@ -110,3 +110,4 @@ def forward_pass_simple_network(x, w1, b1, w2, b2):
 
 
 
+

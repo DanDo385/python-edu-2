@@ -82,3 +82,4 @@ def backward_pass_2layer(x, h, y_pred, y_true, w1, w2):
 
 
 
+
